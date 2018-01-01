@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"href="styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  </head>
+  <body>
+    <h1> Just Go Outside Instead </h1>
+    <img class="weather-img"src="images/weather.png">
+    <form method="get" onsubmit="return do_search()">
+    <fieldset>
+      <div id="center">
+        <div id="your-location"> </div>
+        <div id="loading-image"> Weather is loading...</div>
+        <div id="current_location"><br></div><br>
+      </div>
+    </fieldset>
+    <!-- <button type="button">Get Weather</button> -->
+  </form>
+<div style="text-align: center;">
+  <h3 id="today"></h3>
+  <div style="font-size: 2em;"id="icon"></div>
+  <h3 id="temperature"></h3>
+  <div id="temp"></div>
+
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js'></script>
+<script src="main.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAONYFDRelxyhcpG_tBTJ2TZvfGje6O8YM&callback=initMap"
+async defer></script>
+  </body>
+</html>
