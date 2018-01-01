@@ -16,9 +16,11 @@ $('#loading-image').show();
           $("#current_location").html(data.name);
           $("#temperature").html("Current Temperature")
           $("#temp").html(data.main.temp + " F");
+          $("#buttons").html("<button type='button'>Fahrenheit</button>" + " <button type='button'>Celsius</button>");
         },
         complete: function(){
         $('#loading-image').hide();
+
       }
       });
     });

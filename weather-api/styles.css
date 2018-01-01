@@ -7,7 +7,7 @@ h1 {
   font-size: 3em;
   font-family: 'Luckiest Guy', cursive;
 }
-#center {
+.centered {
   margin: 0 auto;
   text-align: center;
 
