@@ -6,8 +6,8 @@ body {
   vertical-align: middle;
 }
 h3 {
-  color: #33cccc;
-  font-family: 'Inconsolata', monospace;
+  color: #00ACA1;
+  font-family: 'Fjalla One', sans-serif;
 
 }
 .please-work {
@@ -19,6 +19,18 @@ h3 {
 	top: 50%;
 	transform: translateY(-50%) translateX(-50%);
 	left:50%;
+}
+ul a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
+  color: yellow;
+}
+li {
+  /* background-color: #00ACA1; */
+  background: linear-gradient(to right, #00ACA1 , #54DDB6);
+  list-style-position:inside;
+  border: 2px solid white;
+  padding: 1.8em;
 }
 /*
 input[type=text] {

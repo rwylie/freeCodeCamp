@@ -3,6 +3,7 @@ $(document).ready(function(){
 
     $('#txt').keydown(function (e){
       if(e.keyCode == 13){
+        $('#titles').empty();
           ajax_call();
       }
     })
@@ -14,11 +15,16 @@ $(document).ready(function(){
         dataType: "jsonp",
 		     success: function(response) {
 			   console.log(response);
-         $("#titles").html('<a style="color: white; text-decoration: underline;" href="https://en.wikipedia.org/wiki/' + response.query.search[0].title + '">' + response.query.search[0].title + '</a>');
-         $("#snippets").html(response.query.search[0].snippet);
+         for (i=0; i<5; i++) {
+             console.log(response.query.search[i].title);
+             $("#titles").append('<li><a text-decoration: underline;" href="https://en.wikipedia.org/wiki/' + response.query.search[i].title + '">' + response.query.search[i].title +'</a><br>'+ response.query.search[i].snippet + '</li> <br>');
+             // $("#snippets").append(response.query.search[i].snippet);
+            }
         },
         error: function (errorMessage) {
         }
     });
   }
+
+
 });

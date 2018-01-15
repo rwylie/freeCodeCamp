@@ -9,7 +9,7 @@
   <meta name="Wiki Search Web app" content="freecodecamp challenge">
   <meta name="Ronda Wylie" content="wiki-app">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -34,26 +34,30 @@
     </div>
   </div> -->
   <div class="try-center">
-    <h3> search for an article</h3>
+    <h3 style="color: yellow;"> search for an article</h3>
   </div>
     <div class="container">
       <div class="row">
         <div class="col s4">
         </div>
         <div class="col s4">
-          <a class="waves-effect waves-light btn">Random Wikipedia Article</a>
+          <a class="waves-effect waves-light btn" href='https://en.wikipedia.org/wiki/Special:Random' target='_blank'>Random Wikipedia Article</a>
           <p style="color:white;"> Or </p>
-        <input id="txt" type="text" name="search" placeholder="Search Wikipedia...">
+        <input style="color:#33cccc;"id="txt" type="text" name="search" placeholder="Search Wikipedia...">
       </div>
       </div>
       <div class="row">
-        <div class="col s4">
+        <div class="col s2">
         </div>
-        <div class="col s4">
-          <h3 style="color: white;" id="titles"></h3>
-          <p style="color: white;" id="snippets"></p>
+        <div class="col s8">
+
+            <ul style="color: white; border: #33cccc;" id="titles">
+
+            </ul>
+            <p style="color: white;" id="snippets"></p>
+
         </div>
-        <div class="col s4">
+        <div class="col s2">
         </div>
       </div>
     </div>
