@@ -1,3 +1,10 @@
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 25px;
+}
+
 .container {
   font-size: 20px;
   text-align: center;
