@@ -1,0 +1,32 @@
+.container {
+  font-size: 20px;
+  text-align: center;
+  font-family: /* COMBAK:  */;
+  width: 100%;
+  background: #f3f3f3;
+  display: grid;
+}
+.section1 {
+  background: lightPink;
+}
+.container2 {
+  background: PaleTurquoise;
+  font-size: 20px;
+  text-align: center;
+  font-family: /* COMBAK:  */;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+
+}
+#title {
+  font-size: 35px;
+}
+.card {
+  background: white;
+  box-shadow: 0px 1px 5px #555;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
