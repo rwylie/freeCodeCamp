@@ -6,21 +6,33 @@
   </head>
 
   <body>
+
     <header id="header">
       <nav id="nav-bar">
         <img id="header-img"src="">
         <ul>
-          <li><a class="nav-link" href="#">Portfolio</a> </li>
-          <li><a class="nav-link" href="#">About</a>  </li>
-          <li><a class="nav-link" href="#">Contact</a>  </li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a> </li>
+          <li><a class="nav-link" href="#about">About</a>  </li>
+          <li><a class="nav-link" href="#contact">Contact</a>  </li>
         </ul>
       </nav>
-      <form>
-        <h2> Sign up for my Newsletter </h2>
-        <input type="email" id="email" name="email_address" placeholder="email">
-      </form>
-
-
     </header>
+
+    <form action="https://www.freecodecamp.com/email-submit" method="post" enctype="text/plain">
+      <h2> Sign up for my Newsletter </h2>
+      <input type="email" id="email" name="email_address" placeholder="email">
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="portfolio">
+    </div>
+
+    <div id="about">
+    </div>
+
+    <div id="contact">
+    </div>
+
+
   </body>
 </html>

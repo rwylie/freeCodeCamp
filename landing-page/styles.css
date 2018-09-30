@@ -20,3 +20,6 @@ li a {
 li a:hover {
   background-color: white;
 }
+li a:after {
+  color: gray;
+}
