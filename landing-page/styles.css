@@ -14,6 +14,37 @@
 text-align: center;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("imgs/1.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#signup {
+  /* position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 200px;
+  margin: auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -29,13 +60,19 @@ li {
 li a {
   display: block;
   text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
 }
 li a:hover {
   background-color: white;
 }
 li a:after {
   color: gray;
+}
+
+h2 {
+
+  color: white;
+  font-size: 3em;
 }
