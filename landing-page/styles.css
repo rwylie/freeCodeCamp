@@ -1,5 +1,5 @@
 body{
-  padding: 0;
+  margin: auto;
 }
 
 .flex-container {
@@ -31,13 +31,17 @@ text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav {
+
+#header {
   position: fixed;
-  margin: 0;
   width: 100%;
   z-index: 100;
-  padding: 0;
-  top: 0;
+
+  top: -25px;
+
+}
+#nav-bar {
+  top: 50%;
 }
 
 #signup {
