@@ -14,6 +14,16 @@ body{
   /* font-size: 1px; */
 }
 
+.flex-container-2 {
+  display: flex;
+  justify-content: center;
+  background-color: #564E38;
+  /* width: 100%; */
+}
+.flex-container-2 > div {
+  padding: 10px;
+  margin: 40px;
+}
 .center-content {
 text-align: center;
 }
@@ -73,7 +83,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  color: black;
+  color: #564E38;
+
 }
 li a:hover {
   background-color: white;
@@ -82,8 +93,18 @@ li a:after {
   color: gray;
 }
 
-h2 {
+/* FONT STYLES */
 
+h1 {
+  color: white;
+  font-size: 3em;
+}
+
+p {
+  color: white;
+}
+
+h2 {
   color: white;
   font-size: 3em;
 }
