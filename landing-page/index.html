@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title> My Survey Form </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,9 +32,9 @@
   </div>
 
     <div class="flex-container" id="portfolio">
-      <div class="portfolio1"><img src="imgs/2.jpg"></div>
-      <div class="portfolio1"><img src="imgs/3.jpg"></div>
-      <div class="portfolio1"><img src="imgs/4.jpg"></div>
+      <div class="portfolio1" data-aos="zoom-in"><img src="imgs/2.jpg"></div>
+      <div class="portfolio1" data-aos="zoom-in"><img src="imgs/3.jpg"></div>
+      <div class="portfolio1" data-aos="zoom-in"><img src="imgs/4.jpg"></div>
     </div>
 
     <div class="container" id="about">
@@ -44,5 +45,9 @@
 
     <script src="main.js">
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

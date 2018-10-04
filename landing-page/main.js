@@ -22,3 +22,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+// AOS.init({
+//   duration: 1200,
+// })
