@@ -16,8 +16,9 @@ body{
 
 .flex-container-2 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #564E38;
+
   /* width: 100%; */
 }
 .flex-container-2 > div {
