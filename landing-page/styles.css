@@ -4,7 +4,7 @@ body{
 
 .flex-container {
   display: flex;
-  justify-content: center;
+
 }
 
 .flex-container > div {
@@ -13,22 +13,30 @@ body{
   padding: 10px;
   /* font-size: 1px; */
 }
-
+.flex-container-center {
+  display: flex;
+  justify-content: center;
+}
 .flex-container-2 {
   display: flex;
   justify-content: space-between;
   background-color: #564E38;
-
   /* width: 100%; */
 }
 .flex-container-2 > div {
   padding: 10px;
   margin: 40px;
+  
 }
-.center-content {
-text-align: center;
+.flex-container-center {
+  display: flex;
+  background-color: #564E38;
+  justify-content: center;
 }
 
+.order-last {
+  order: 1;
+}
 .parallax {
     /* The image used */
     background-image: url("imgs/1.jpg");
