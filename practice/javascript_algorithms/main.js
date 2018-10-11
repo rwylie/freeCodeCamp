@@ -25,3 +25,11 @@
 //     this.gear = newGear;
 //   }
 // };
+
+// Constructor
+// 
+// class Vegetable {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//   }
