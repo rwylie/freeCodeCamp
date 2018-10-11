@@ -16,3 +16,12 @@
   // change code above this line
 // };
 // console.log(createPerson("Zodiac Hasbro", 56, "male")); // returns a proper object
+
+//concise declarative functions with ES6
+// const bicycle = {
+//   gear: 2,
+//   setGear(newGear) {            * changed from setGear: function(newGear) {}
+//     "use strict";
+//     this.gear = newGear;
+//   }
+// };
