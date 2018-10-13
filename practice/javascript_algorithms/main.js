@@ -74,3 +74,16 @@
 //
 //     // test here
 //     booWho(null);
+
+
+//going backwards to finish the basic javascript functions that were added:
+// parsing integers:
+// var num = parseInt(str);  (will convert a number string to an integer)
+//it can also convert a binary number by taking a radix
+
+// function convertToInteger(str) {
+//   var str = parseInt(str, 2);
+//   return str;
+// }
+//
+// convertToInteger("10011");
