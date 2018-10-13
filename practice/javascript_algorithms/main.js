@@ -50,7 +50,23 @@
 //   return undefined;
 // }
 
-
+// This one seriously confuses me... need to work more on object properties :p
+// function updateRecords(id, prop, value) {
+//   if (prop === "tracks" && value !== "") {
+//    if(collection[id][prop]) {
+//     collection[id][prop].push(value);
+//    }
+//    else {
+//     collection[id][prop]=[value];
+//    }
+//   } else if (value !== "") {
+//     collection[id][prop] = value;
+//   } else {
+//     delete collection[id][prop];
+//   }
+//
+//   return collection;
+// }
 
 // function booWho(bool) {
 //       return typeof bool === 'boolean';
