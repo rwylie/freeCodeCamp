@@ -7,3 +7,18 @@ div {
   background: #fff;
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2); }
+
+.blue-bg {
+  background-color: blue;
+  width: 200px;
+  height: 200px; }
+
+.black-bg {
+  background-color: black;
+  width: 200px;
+  height: 200px; }
+
+.red-bg {
+  background-color: red;
+  width: 200px;
+  height: 200px; }

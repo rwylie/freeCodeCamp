@@ -13,3 +13,7 @@ div{
   width: 100%;
   box-shadow: $box-shadow-bottom-only;
 }
+
+@each $color in blue, black, red {
+  .#{$color}-bg {background-color: $color; width: 200px; height: 200px;}
+}
