@@ -17,3 +17,8 @@ div{
 @each $color in blue, black, red {
   .#{$color}-bg {background-color: $color; width: 200px; height: 200px;}
 }
+
+$x: 1;
+@while $x < 5 {
+  .text-#{$x}{font-size: 1px * $x;}
+}
