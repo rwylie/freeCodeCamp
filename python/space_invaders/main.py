@@ -48,7 +48,7 @@ player.color("white")
 player.shape("girl.gif")
 player.penup()
 player.speed(0)
-player.setposition(0, -250)
+player.setposition(0, -225)
 player.setheading(90)
 
 #player move
@@ -99,7 +99,7 @@ def fire_bullet():
   #declare bulletstate as global if it needs changed
   global bulletstate
   if bulletstate == "ready":
-    # os.system("afplay")
+    os.system("afplay woosh.wav&")
     bulletstate = "fire"
     #Move the bullet to just above the player
     x = player.xcor()
@@ -122,15 +122,34 @@ def move_right():
     x = 280
   player.setx(x)
 
+def pause():
+  # paused = True
+  # if paused == True:
+  #   turtle.done()
+  #   paused = False
+  # if paused == False:
+  turtle.done()
+
+# def go():
+
+
+
+
+  
+
 #Create keyboard bindings
 turtle.listen()
 turtle.onkey(move_left, "Left")
 turtle.onkey(move_right, "Right")
 turtle.onkey(fire_bullet, "space")
 
+turtle.onkey(pause, "p")
+
+
 #main game loop
 while True:
 
+  
   for enemy in enemies: 
     #move enemy
     x = enemy.xcor()
@@ -156,6 +175,7 @@ while True:
       #hide enemy turtle and bullet when both touch
     if isCollision(bullet, enemy):
       #reset the bullet
+      os.system("afplay point.wav&")
       bullet.hideturtle()
       bulletstate = "ready"
       bullet.setposition(0, -400)
@@ -174,6 +194,10 @@ while True:
       enemy.hideturtle()
       print("Game Over")
       break
+
+  
+  #game pause
+ 
 
   #move the bullet
   # if bulletstate == "fire":
